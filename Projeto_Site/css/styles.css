@@ -1,0 +1,438 @@
+/* Cores */
+:root{
+    --primary: #a88b0e;
+    --secondary: #95989a;
+    --text-color: #276994;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+    --text-quartiary: #fff;
+}
+
+* {
+    /*Padronizar a fonte*/
+    font-family: 'Montserrat', sans-serif;
+    /*Tirar a margem*/
+    margin: 0;                  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o formulário */
+#event-description {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+    url("../img/dia-da-cruz1.jpg");
+    /*centraliza a imagem*/
+    background-position: center;   
+    /* a imagem aparece melhor na área util da página*/                                    
+    background-size: cover;
+    /*altura da imagem*/                                
+    height: 85vh;                                                      
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-quartiary);
+}
+
+#disclaimer h2 {
+    color: var(--primary);
+}
+
+#disclaimer h2 {
+    /*aumenta a fonte*/
+    font-size: 3em;                                                         
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+    font-size: 2em;
+    /*letras em caixa alta*/
+    text-transform: uppercase;                                              
+    max-width: 350px;
+    /*caracter em negrito*/
+    font-weight: bold;                                                      
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#disclaimer .event-date {
+    font-weight: bold;
+}
+
+#subscription-form {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+    margin-bottom: 3em;
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label {
+    color: #4b4242;
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-quartiary);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* Sessões do site */
+#key-benefits h2 {
+    background: linear-gradient(to top, white, gray);  
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+.texto {
+    color: var(--text-secondary);  
+}
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#benefit-1 {
+    background-image: url(../img/photo.jpg);
+}
+
+#benefit-2 {
+    background-image: url(../img/mulheres.jpg);
+}
+
+#benefit-3 {
+    background-image: url(../img/homens.jpg );
+}
+
+/* Sessão da localidade */
+#location {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+    url("../img/biblia.jpg");
+    background-position: center;
+    background-origin: center;                                     
+    background-size: contain; 
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-quartiary);
+    margin-bottom: 3em;
+}
+
+#adress, 
+#about-location {
+    max-width: 30%;
+}
+
+#adress {
+    display: flex;
+}
+
+#adress i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: 0.2em;
+}
+
+#adress-details {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3 {
+    color: var(--text-color);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-location p {
+    line-height: 1.5em;
+}
+
+/* Sessão dos detalhes */
+#details {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail img {
+    width: 50%;
+}
+
+.detail h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.detail-description ul {
+    list-style-position: inside;
+}
+
+.detail-description ul li {
+    margin-bottom: 0.4em;
+}
+
+#detail-1 {
+    display: flex;
+    align-items: center;
+}
+
+#detail-2 {
+    display: flex;
+    align-items: center;
+}
+
+#detail-3 {
+    display: flex;
+    align-items: center;
+}
+
+.detail-description ul li:last-child {
+    font-weight: bold;
+}
+
+/*Sessão Final */
+#icon {
+    background-color:  #1e9aec;   
+    color: var(--text-secondary);
+    font-size: 1em;
+    margin-right: 0.2em;
+}
+
+#icon h2 {
+    background: linear-gradient(to top, #1e9aec, #fff); 
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+#icon a:hover {
+    color: var(--primary);
+    opacity: 1;
+}
+
+#icon a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 5px; 
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Rodapé */
+#footer {
+    /*background: linear-gradient(to top, #95989a, #fff); */
+    background-color:  #1e9aec;   
+    text-align: center;
+    color: var(--text-secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8 em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/*Tela Mobile*/
+@media (max-width: 450px) {
+    .btn {
+        opacity: 1;
+    }
+
+    /* Primeira Sessão */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2 {
+        margin-bottom: .5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* Segunda Sessão */
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* Terceira Sessão */
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #adress {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #adress i {
+        margin: .3em 0;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: 0;
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+    /* Quarta Sessão */
+    .detail {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        gap: 0;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    #detail-3 img {
+        display: none;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-1 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+    /* Ultima Sessão */
+    #cta {
+        text-align: center;
+    }
+    
+    #cta .btn {
+        width: 80%;
+    }
+}
